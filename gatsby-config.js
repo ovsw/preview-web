@@ -27,6 +27,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-source-sanity',
+      options: {
+        // find this on manage.sanity.io/projects
+        projectId: 'm4hglkf5',
+      // probably 'production' or 'development'
+        dataset: 'production',
+      // create this on the project page on manage.sanity.io unter Settings > API
+        token: "skuq4Dd0S9J8gHvDoi1SoEG4skZllZi0h98BhTxJJ2YbhaPDRZPLR46UqJF73XMzR73VUnelkrQ3DaSGiBuGYTg5TE5ApwwGGz8uYlZlbqI4GsaGOeT2W9kakWKHRL7wXKSkwJu6w39g9QDeTUBAhxLoZczkaSp3ycF3lv1e5QBDtqbis3MO",
+        watchMode: true,
+        overlayDrafts: true,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
